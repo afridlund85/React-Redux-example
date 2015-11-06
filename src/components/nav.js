@@ -1,8 +1,8 @@
-var React = require('react'),
-    Link = require('react-router').Link;
+import React, { Component } from 'react'
+import { Link } from 'react-router'
 
-var Nav = React.createClass({
-    render: function(){
+export default class Nav extends Component {
+    render () {
         return (
             <div id="nav">
                 <ul>
@@ -11,8 +11,7 @@ var Nav = React.createClass({
                 </ul>
                 <div className="clear"/>
             </div>
-        );
+        )
     }
-});
+}
 
-module.exports = Nav;

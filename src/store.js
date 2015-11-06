@@ -1,11 +1,10 @@
-var Redux = require('redux'),
-    countReducer = require('./reducers/count'),
-    initialState = require('./initial-state');
-
-var reducers = Redux.combineReducers({
+import { combineReducers, createStore } from 'redux'
+import initialState from './initial-state';
+import countReducer from './reducers/count';
+var reducers = combineReducers({
     count: countReducer
 });
 
-var store = Redux.createStore(reducers, initialState());
+var store = createStore(reducers, initialState());
 
-module.exports = store;
+export default store;

@@ -1,8 +1,8 @@
-module.exports = {
-    countIncrease: function(){
+export default  {
+    countIncrease (){
         return {type: 'COUNT_INC'};
     },
-    countDecrease: function(){
+    countDecrease (){
         return {type: 'COUNT_DEC'};
     }
 };

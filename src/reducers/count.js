@@ -1,7 +1,7 @@
-var initialState = require('./../initial-state');
+import initialState from './../initial-state'
 
-var CountReducer = function(state, action){
-    var newState = Object.assign({}, state);
+const CountReducer = (state, action) => {
+    const newState = Object.assign({}, state);
     switch(action.type){
         case 'COUNT_INC':
             newState.currentValue += 1;
@@ -14,4 +14,4 @@ var CountReducer = function(state, action){
     }
 };
 
-module.exports = CountReducer;
+export default CountReducer

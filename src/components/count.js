@@ -1,40 +1,39 @@
-var React = require('react'),
-    ptypes = React.PropTypes,
-    ReactRedux = require('react-redux'),
-    actions = require('../actions');
+import React, { Component, PropTypes } from 'react'
+import { connect } from 'react-redux'
+import actions from '../actions'
 
-var Count = React.createClass({
-    propTypes: {
-        increase: ptypes.func.isRequired,
-        decrease: ptypes.func.isRequired
-    },
-    render: function(){
+class Count extends Component {
+    render () {
+        const { currentValue, increase, decrease } = this.props;
         return (
             <div>
                 <h2>Count</h2>
-                <p>Current count: {this.props.currentValue}</p>
+                <p>Current count: {currentValue}</p>
                 <p>
-                    <button onClick={this.props.increase}>+</button>
-                    <button onClick={this.props.decrease}>-</button>
+                    <button onClick={increase}>+</button>
+                    <button onClick={decrease}>-</button>
                 </p>
             </div>
-        );
+        )
     }
-});
+}
 
-var mapStateToProps = function(state){
-    return state.count;
+Count.propTypes = {
+        increase : PropTypes.func.isRequired,
+        decrease : PropTypes.func.isRequired
 };
 
-var mapDispatchToProps = function(dispatch){
+const mapStateToProps = (state) => state.count;
+
+const mapDispatchToProps = (dispatch) => {
     return {
-        increase: function(){
+        increase() {
             dispatch(actions.countIncrease());
         },
-        decrease: function(){
+        decrease() {
             dispatch(actions.countDecrease());
         }
     }
 };
 
-module.exports = ReactRedux.connect(mapStateToProps, mapDispatchToProps)(Count);
+export default connect(mapStateToProps, mapDispatchToProps)(Count);

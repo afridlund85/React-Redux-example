@@ -1,7 +1,8 @@
-module.exports = function(){
+export default () => {
     return {
         count: {
             currentValue: 0
         }
     }
 };
+
