@@ -1,16 +1,14 @@
-var React = require('react'),
-    Nav = require('./nav');
+import React, { Component } from 'react'
+import Nav from './nav'
 
-var Wrap = React.createClass({
-    render: function(){
+export default class Wrap extends Component {
+    render (){
         return (
             <div id="wrap">
                 <h1>React, React Router &amp; Redux example</h1>
                 <Nav/>
-                {this.props.children}
+                { this.props.children }
             </div>
-        );
+        )
     }
-});
-
-module.exports = Wrap;
+}

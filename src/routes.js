@@ -1,12 +1,10 @@
-var React = require('react'),
-    ReactRouter = require('react-router'),
-    Route = ReactRouter.Route,
-    IndexRoute = ReactRouter.IndexRoute,
-    Wrap = require('./components/wrap');
-    Home = require('./components/home'),
-    Count = require('./components/count');
+import React from 'react'
+import ReactRouter, { IndexRoute, Route } from 'react-router'
+import Wrap from './components/wrap';
+import Home from './components/home';
+import Count from './components/count';
 
-module.exports = (
+export default (
     <Route path='/' component={Wrap}>
         <IndexRoute component={Home}/>
         <Route path='/count' component={Count}/>

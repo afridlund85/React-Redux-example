@@ -1,11 +1,11 @@
-var React = require('react'),
-    ReactDOM = require('react-dom'),
-    Router = require('react-router').Router,
-    Provider = require('react-redux').Provider,
-    store = require('./store'),
-    routes = require('./routes');
+import ReactDom from 'react-dom'
+import { Router } from 'react-router'
+import { Provider } from 'react-redux'
+import React from 'react'
+import routes from './routes'
+import store from './store'
 
-ReactDOM.render(
+ReactDom.render(
     <Provider store={store}>
         <Router routes={routes}/>
     </Provider>,

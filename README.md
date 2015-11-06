@@ -1,19 +1,11 @@
-# React, React Router and Redux example
-
-Simple example of how to get started with React, React Router and Redux.
-
-[Try it out](http://afridlund85.github.io/React-Redux-example/)
-
-I'm a beginner; frustrated beginner that could not find any simple, small examples on how to get started with React and Redux. This is my own example of a small application that I hope can help others getting past that big initial hurdle with a little bit more ease.
+# This folder contain the same example written in ES2015
 
 ## Getting started
 
 ```
-git clone https://github.com/afridlund85/React-Redux-example.git
-npm install
+1 open console, navigate to React-redux-example
+2 npm install
+3 npm run build
+4 open index.html in browser
+
 ```
-
-Open index.html to try it out, browse the code to figure it out.
-
-##TO-DO
-Write some more here...
