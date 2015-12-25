@@ -6,8 +6,8 @@ import routes from './routes'
 import store from './store'
 
 ReactDom.render(
-    <Provider store={store}>
-        <Router routes={routes}/>
+    <Provider store={ store }>
+        <Router routes={ routes }/>
     </Provider>,
     document.getElementById('app')
 )

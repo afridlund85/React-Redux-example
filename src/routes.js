@@ -5,8 +5,8 @@ import Home from './components/home'
 import Count from './components/count'
 
 export default (
-    <Route path='/' component={Wrap}>
-        <IndexRoute component={Home}/>
-        <Route path='/count' component={Count}/>
+    <Route path='/' component={ Wrap }>
+        <IndexRoute component={ Home }/>
+        <Route path='/count' component={ Count }/>
     </Route>
 )

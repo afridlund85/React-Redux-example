@@ -4,14 +4,14 @@ import actions from '../actions'
 
 const Count = (props) => {
     const { currentValue, increase, decrease } = props
-    
+
     return (
         <div>
             <h2>Count</h2>
-            <p>Current count: {currentValue}</p>
+            <p>Current count: { currentValue }</p>
             <p>
-                <button onClick={increase}>+</button>
-                <button onClick={decrease}>-</button>
+                <button onClick={ increase }>+</button>
+                <button onClick={ decrease }>-</button>
             </p>
         </div>
     )
