@@ -10,4 +10,4 @@ ReactDom.render(
         <Router routes={routes}/>
     </Provider>,
     document.getElementById('app')
-);
+)

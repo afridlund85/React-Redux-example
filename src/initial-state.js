@@ -4,5 +4,4 @@ export default () => {
             currentValue: 0
         }
     }
-};
-
+}

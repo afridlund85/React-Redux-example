@@ -4,7 +4,7 @@ import actions from '../actions'
 
 class Count extends Component {
     render () {
-        const { currentValue, increase, decrease } = this.props;
+        const { currentValue, increase, decrease } = this.props
         return (
             <div>
                 <h2>Count</h2>
@@ -21,19 +21,19 @@ class Count extends Component {
 Count.propTypes = {
         increase : PropTypes.func.isRequired,
         decrease : PropTypes.func.isRequired
-};
+}
 
-const mapStateToProps = (state) => state.count;
+const mapStateToProps = (state) => state.count
 
 const mapDispatchToProps = (dispatch) => {
     return {
         increase() {
-            dispatch(actions.countIncrease());
+            dispatch(actions.countIncrease())
         },
         decrease() {
-            dispatch(actions.countDecrease());
+            dispatch(actions.countDecrease())
         }
     }
-};
+}
 
-export default connect(mapStateToProps, mapDispatchToProps)(Count);
+export default connect(mapStateToProps, mapDispatchToProps)(Count)
