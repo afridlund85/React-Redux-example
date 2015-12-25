@@ -1,6 +1,8 @@
-const initialState = {
-    count: {
-        currentValue: 0
+const initialState = () => {
+    return {
+        count: {
+          currentValue: 0
+        }
     }
 }
 
