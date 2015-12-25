@@ -10,7 +10,7 @@ const CountReducer = (state, action) => {
             newState.currentValue -= 1
             return newState
         default:
-            return state || initialState().count
+            return state || initialState.count
     }
 }
 

@@ -5,6 +5,6 @@ var reducers = combineReducers({
     count: countReducer
 })
 
-var store = createStore(reducers, initialState())
+var store = createStore(reducers, initialState)
 
 export default store

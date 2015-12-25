@@ -1,7 +1,7 @@
-export default () => {
-    return {
-        count: {
-            currentValue: 0
-        }
+const initialState = {
+    count: {
+        currentValue: 0
     }
 }
+
+export default initialState
